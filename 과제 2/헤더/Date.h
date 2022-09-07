@@ -1,48 +1,49 @@
 #ifndef DATE_H
 #define DATE_H
 
-#pragma warning(disable: 4996) // ¿À·ù ¾È¶ß°Ô ÇÏ´Â pragmaÁ¤ÀÇ
+#pragma warning(disable: 4996) // ì˜¤ë¥˜ ì•ˆëœ¨ê²Œ í•˜ëŠ” pragmaì •ì˜
 #include <iostream>
 #include <cstdlib>
 
 using namespace std;
 
-#define WEEKDATY_AD01JAN01 MON					// 1³â 1¿ù 1ÀÏÀº ¿ù¿äÀÏÀÌ´Ù
-#define MONTHS_YEAR 12							// 1³â ´Ş ¼ö : 12
-#define DAYS_P_WEEK 7							// ÀÏÁÖÀÏÀº 7ÀÏ
-#define Secs_in_Minute 60						// 1ºĞ = 60ÃÊ
-#define Secs_in_Hour (Secs_in_Minute * 60)		// 1½Ã°£ = 60ºĞ * 60ÃÊ = 3600ÃÊ
-#define Secs_in_DAY (Secs_in_Hour* 24)			// 1ÀÏ = 24½Ã°£ * 60ºĞ * 60ÃÊ = 86400ÃÊ
-#define LOCAL_GMT_OFFSET_HOUR 9					// ÇÑ±¹Àº Ç¥ÁØ½Ã ±âÁØ 9½Ã°£ ´À¸² (GMT +9H)
+#define WEEKDATY_AD01JAN01 MON					// 1ë…„ 1ì›” 1ì¼ì€ ì›”ìš”ì¼ì´ë‹¤
+#define MONTHS_YEAR 12							// 1ë…„ ë‹¬ ìˆ˜ : 12
+#define DAYS_P_WEEK 7							// ì¼ì£¼ì¼ì€ 7ì¼
+#define Secs_in_Minute 60						// 1ë¶„ = 60ì´ˆ
+#define Secs_in_Hour (Secs_in_Minute * 60)		// 1ì‹œê°„ = 60ë¶„ * 60ì´ˆ = 3600ì´ˆ
+#define Secs_in_DAY (Secs_in_Hour* 24)			// 1ì¼ = 24ì‹œê°„ * 60ë¶„ * 60ì´ˆ = 86400ì´ˆ
+#define LOCAL_GMT_OFFSET_HOUR 9					// í•œêµ­ì€ í‘œì¤€ì‹œ ê¸°ì¤€ 9ì‹œê°„ ëŠë¦¼ (GMT +9H)
 
 class Date
 {
 public:
-	Date();										// default constructor (±âº» »ı¼ºÀÚ), __init__ 
-	Date(int y, int m, int d);					// constructor (»ı¼ºÀÚ)
-	void inputDate();							// ³¯Â¥ input ÇÏ´Â ÇÔ¼ö
-	void printDate();							// ³¯Â¥ Ãâ·ÂÇÏ´Â ÇÔ¼ö
+	Date();										// default constructor (ê¸°ë³¸ ìƒì„±ì), __init__ 
+	Date(int y, int m, int d);					// constructor (ìƒì„±ì)
+	~Date();									// destructor (ì†Œë©¸ì)
+	void inputDate();							// ë‚ ì§œ input í•˜ëŠ” í•¨ìˆ˜
+	void printDate();							// ë‚ ì§œ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
 
-	// µ¥ÀÌÅÍ ¸â¹ö º¯°æÀÚ (mutator)
-	void setDate(int y, int m, int dy);			// ³¯Â¥ ¼¼ÆÃÇÏ´Â ÇÔ¼ö
+	// ë°ì´í„° ë©¤ë²„ ë³€ê²½ì (mutator)
+	void setDate(int y, int m, int dy);			// ë‚ ì§œ ì„¸íŒ…í•˜ëŠ” í•¨ìˆ˜
 	void setMonth(int m);
 	void setYear(int y);
 
-	// µ¥ÀÌÅÍ ¸â¹ö Á¢±ÙÀÚ (accessor)
+	// ë°ì´í„° ë©¤ë²„ ì ‘ê·¼ì (accessor)
 	int getYear() { return year; }
-	int getMonth() { return month; }			// ¹«½¼´ŞÀÎÁö ±¸ÇÔ ( 1¿ù, 2¿ù ..)
+	int getMonth() { return month; }			// ë¬´ìŠ¨ë‹¬ì¸ì§€ êµ¬í•¨ ( 1ì›”, 2ì›” ..)
 	int getDay() { return day; }
 	int getYearDay();
 	int getYearDay(int m, int d);
 	int getWeekDay();
-	int getElapsedDaysFromAD010101();			// 1³â 1¿ù 1ÀÏ ºÎÅÍ ¸çÄ¥ ¶³¾îÁ®ÀÖ´ÂÁö °è»êÇÏ´Â ÇÔ¼ö
+	int getElapsedDaysFromAD010101();			// 1ë…„ 1ì›” 1ì¼ ë¶€í„° ë©°ì¹  ë–¨ì–´ì ¸ìˆëŠ”ì§€ ê³„ì‚°í•˜ëŠ” í•¨ìˆ˜
 	int getElapsedDaysFromAD010101(Date);
 
 private:
 	bool isLeapYear();							// check whether the year is leap year
 	bool isLeapYear(int y);						
 	bool isValidDate(int y, int m, int d);
-	int year;									// privite º¯¼ö year, month, day
+	int year;									// privite ë³€ìˆ˜ year, month, day
 	int month;
 	int day;
 };
