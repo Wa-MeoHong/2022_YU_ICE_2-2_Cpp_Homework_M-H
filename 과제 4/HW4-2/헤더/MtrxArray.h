@@ -6,17 +6,17 @@
 
 using namespace std;
 
-class MtrxArray						// Çà·Ä ¹è¿­ Å¬·¡½º
+class MtrxArray						// í–‰ë ¬ ë°°ì—´ í´ë˜ìŠ¤
 {
 public:
-	MtrxArray(int array_size);		// Çà·Ä ¹è¿­ »ı¼ºÀÚ 
-	~MtrxArray();					// Çà·Ä ¹è¿­ ¼Ò¸êÀÚ
-	Mtrx& operator[](int);			// Çà·Ä ¹İÈ¯
+	MtrxArray(int array_size);			// í–‰ë ¬ ë°°ì—´ ìƒì„±ì 
+	~MtrxArray();					// í–‰ë ¬ ë°°ì—´ ì†Œë©¸ì
+	Mtrx& operator[](int);				// í–‰ë ¬ ë°˜í™˜
 
 private:
-	Mtrx* pMtrx;					// Çà·Ä ¹è¿­ ´ã´Â Æ÷ÀÎÅÍ
-	int mtrxArraySIZE;				// ¹è¿­ÀÇ Å©±â
-	bool isValidIndex(int index);	// Çà·Ä ÀÎµ¦½º ¹øÈ£ À¯È¿¼º °Ë»ç
+	Mtrx* pMtrx;					// í–‰ë ¬ ë°°ì—´ ë‹´ëŠ” í¬ì¸í„°
+	int mtrxArraySIZE;				// ë°°ì—´ì˜ í¬ê¸°
+	bool isValidIndex(int index);			// í–‰ë ¬ ì¸ë±ìŠ¤ ë²ˆí˜¸ ìœ íš¨ì„± ê²€ì‚¬
 };
 
 #endif
