@@ -1,16 +1,16 @@
 /*
-  ÆÄÀÏ¸í : "HW4-2_21912193_½Å´ëÈ«"
-  ÇÁ·Î±×·¥ÀÇ ¸ñÀû ¹× ±âº» ±â´É:
-	- Class Mtrx (Çà·Ä Å¬·¡½º)¸¦ ¸¸µé°í ¿¬»êÀÚ ¿À¹ö·Îµå¸¦ ÀÌ¿ëÇØ °è»êÀ» ÇÏ´Â ÇÁ·Î±×·¥
-  ÇÁ·Î±×·¥ ÀÛ¼ºÀÚ : ½Å´ëÈ«(2022³â 9¿ù 23ÀÏ)
-  ÃÖÁ¾ Update : Version 1.0.0, 2022³â 9¿ù 23ÀÏ(½Å´ëÈ«)
+  íŒŒì¼ëª… : "HW4-2_21912193_ì‹ ëŒ€í™"
+  í”„ë¡œê·¸ë¨ì˜ ëª©ì  ë° ê¸°ë³¸ ê¸°ëŠ¥:
+	- Class Mtrx (í–‰ë ¬ í´ë˜ìŠ¤)ë¥¼ ë§Œë“¤ê³  ì—°ì‚°ì ì˜¤ë²„ë¡œë“œë¥¼ ì´ìš©í•´ ê³„ì‚°ì„ í•˜ëŠ” í”„ë¡œê·¸ë¨
+  í”„ë¡œê·¸ë¨ ì‘ì„±ì : ì‹ ëŒ€í™(2022ë…„ 9ì›” 23ì¼)
+  ìµœì¢… Update : Version 1.0.0, 2022ë…„ 9ì›” 23ì¼(ì‹ ëŒ€í™)
 ===========================================================================================================
-					ÇÁ·Î±×·¥ ¼öÁ¤/º¸¿Ï ÀÌ·Â
+					í”„ë¡œê·¸ë¨ ìˆ˜ì •/ë³´ì™„ ì´ë ¥
 ===========================================================================================================
-   ¼öÁ¤ÀÚ		   ¼öÁ¤ÀÏ		 ¹öÀü			     ¼öÁ¤/º¸¿Ï³»¿ë
+   ìˆ˜ì •ì		   ìˆ˜ì •ì¼		 ë²„ì „			     ìˆ˜ì •/ë³´ì™„ë‚´ìš©
 -----------------------------------------------------------------------------------------------------------
-	½Å´ëÈ«		 2022/09/23		v1.0.0		  ÃÖÃÊÀÛ¼º
-	½Å´ëÈ«		 2022/09/25		v1.0.1		  ÃÖÁ¾¿Ï¼º
+	ì‹ ëŒ€í™		 2022/09/23		v1.0.0		  ìµœì´ˆì‘ì„±
+	ì‹ ëŒ€í™		 2022/09/25		v1.0.1		  ìµœì¢…ì™„ì„±
 
 ===========================================================================================================
 */
@@ -18,14 +18,14 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "Mtrx.h"							// Çà·Ä Å¬·¡½º Çì´õ
-#include "MtrxArray.h"						// Çà·Ä ¹è¿­ Å¬·¡½º Çì´õ
+#include "Mtrx.h"							// í–‰ë ¬ í´ë˜ìŠ¤ í—¤ë”
+#include "MtrxArray.h"						// í–‰ë ¬ ë°°ì—´ í´ë˜ìŠ¤ í—¤ë”
 
 using namespace std;
 
-#define NUM_MTRX 8							// ¸¸µé ¹è¿­ °³¼ö
-#define INPUT "Matrix_data.txt"				// ÀÔ·ÂÆÄÀÏ "Matrix_date.txt"
-#define OUTPUT "Result.txt"					// Ãâ·ÂÆÄÀÏ "Result.txt"
+#define NUM_MTRX 8							// ë§Œë“¤ ë°°ì—´ ê°œìˆ˜
+#define INPUT "Matrix_data.txt"				// ì…ë ¥íŒŒì¼ "Matrix_date.txt"
+#define OUTPUT "Result.txt"					// ì¶œë ¥íŒŒì¼ "Result.txt"
 
 
 int main(void)
@@ -33,66 +33,66 @@ int main(void)
 	ifstream fin;
 	ofstream fout;
 
-	fin.open(INPUT);						// ÀÔ·Â ÆÄÀÏ ¿ÀÇÂ
+	fin.open(INPUT);						// ì…ë ¥ íŒŒì¼ ì˜¤í”ˆ
 	if (fin.fail())	{
 		cout << "Error! Matrix_data.txt doesn't open!!" << endl; exit(0);
 	}
-	fout.open(OUTPUT);						// Ãâ·Â ÆÄÀÏ ¿ÀÇÂ
+	fout.open(OUTPUT);						// ì¶œë ¥ íŒŒì¼ ì˜¤í”ˆ
 	if (fout.fail()) {
 		cout << "Error! Result.txt doesn't open!!" << endl; exit(0);
 	}
-	MtrxArray mtrx(NUM_MTRX);				// ¹è¿­ ¸¸µé±â
+	MtrxArray mtrx(NUM_MTRX);				// ë°°ì—´ ë§Œë“¤ê¸°
 
-	// Çà·Ä 0, Çà·Ä 1, Çà·Ä 2 ÆÄÀÏ¿¡¼­ ÀÔ·Â ¹ŞÀ½
+	// í–‰ë ¬ 0, í–‰ë ¬ 1, í–‰ë ¬ 2 íŒŒì¼ì—ì„œ ì…ë ¥ ë°›ìŒ
 	fin >> mtrx[0] >> mtrx[1] >> mtrx[2];
-	// ÀÔ·Â¹ŞÀº ÈÄ, ÀÌ¸§ ¼¼ÆÃ
+	// ì…ë ¥ë°›ì€ í›„, ì´ë¦„ ì„¸íŒ…
 	mtrx[0].NameSetting("Mtrx[0] = ");
 	mtrx[1].NameSetting("Mtrx[1] = ");
 	mtrx[2].NameSetting("Mtrx[2] = ");
 
-	// Çà·Ä 0, 1, 2 ÆÄÀÏ¿¡ Ãâ·Â
+	// í–‰ë ¬ 0, 1, 2 íŒŒì¼ì— ì¶œë ¥
 	fout << mtrx[0] << endl;
 	fout << mtrx[1] << endl;
 	fout << mtrx[2] << endl;
 	cout << "Matrix data (Mtrx[0], Mtrx[1], Mtrx[2]) print complete! " << endl;
 
-	// Çà·Ä µ¡¼À ÈÄ Ãâ·Â
+	// í–‰ë ¬ ë§ì…ˆ í›„ ì¶œë ¥
 	mtrx[3] = mtrx[0] + mtrx[1];
 	mtrx[3].NameSetting("Mtrx[3] = Mtrx[0] + Mtrx[1] = ");
 	fout << mtrx[3] << endl;
 	cout << "Add Matrix print complete! " << endl;
 
-	// Çà·Ä –E¼À ÈÄ Ãâ·Â
+	// í–‰ë ¬ Â–Eì…ˆ í›„ ì¶œë ¥
 	mtrx[4] = mtrx[0] - mtrx[1];
 	mtrx[4].NameSetting("Mtrx[4] = Mtrx[0] - Mtrx[1] = ");
 	fout << mtrx[4] << endl;
 	cout << "Substract Matrix print complete! " << endl;
 
-	// Çà·Ä °ö¼À ÈÄ Ãâ·Â
+	// í–‰ë ¬ ê³±ì…ˆ í›„ ì¶œë ¥
 	mtrx[5] = mtrx[0] * mtrx[2];
 	mtrx[5].NameSetting("Mtrx[5] = Mtrx[0] * Mtrx[2] = ");
 	fout << mtrx[5] << endl;
 	cout << "Multiple Matrix print complete! " << endl;
 
-	// Çà·Ä 6Àº Çà·Ä 5ÀÇ ÀüÄ¡Çà·Ä
+	// í–‰ë ¬ 6ì€ í–‰ë ¬ 5ì˜ ì „ì¹˜í–‰ë ¬
 	mtrx[6] = ~mtrx[5];
 	mtrx[6].NameSetting("Mtrx[6] = ~Mtrx[5] = ");
 	fout << mtrx[6] << endl;
 	cout << "Transpose Matrix print complete! " << endl;
 
-	// Çà·Ä 7 == Çà·Ä 0, Çà·Ä 0¸¦ ´ëÀÔ
+	// í–‰ë ¬ 7 == í–‰ë ¬ 0, í–‰ë ¬ 0ë¥¼ ëŒ€ì…
 	mtrx[7] = mtrx[0];
 	mtrx[7].NameSetting("Mtrx[7] = Mtrx[0] = ");
 	fout << mtrx[7] << endl;
 	cout << "Substitute Matrix print complete! " << endl;
 
-	// Çà·Ä 0¿Í Çà·Ä 7ÀÌ °°ÀºÁö ´Ù¸¥Áö ºñ±³
+	// í–‰ë ¬ 0ì™€ í–‰ë ¬ 7ì´ ê°™ì€ì§€ ë‹¤ë¥¸ì§€ ë¹„êµ
 	if (mtrx[0] == mtrx[7])
 		fout << "Mtrx[0] and Mtrx[7] are equal." << endl;
 	if (mtrx[0] != mtrx[7])
-		fout << "Mtrx[0] and Mtrx[7] are equal." << endl;
+		fout << "Mtrx[0] and Mtrx[7] are not equal." << endl;
 
-	// ÆÄÀÏ ´İ±â
+	// íŒŒì¼ ë‹«ê¸°
 	fin.close();
 	fout.close();
 
