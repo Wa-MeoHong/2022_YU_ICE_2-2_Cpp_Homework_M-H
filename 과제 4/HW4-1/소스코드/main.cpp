@@ -72,7 +72,7 @@ int main(void)
 
 	//cmplxs.sort();
 	//cmplxs.print(cout);
-	//파일 닫기 
+	//파일 닫기  
 	fin.close();
 
 	return 0;
