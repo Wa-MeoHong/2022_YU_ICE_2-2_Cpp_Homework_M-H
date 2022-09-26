@@ -1,15 +1,15 @@
 /*
-  ÆÄÀÏ¸í : "HW4-1_21912193_½Å´ëÈ«"
-  ÇÁ·Î±×·¥ÀÇ ¸ñÀû ¹× ±âº» ±â´É:
-	- Cmplx Å¬·¡½º¸¦ ¸¸µé°í, ¿¬»êÀÚ ¿À¹ö·Îµå¸¦ ÅëÇØ ¹è¿­À» »ý¼ºÈÄ, Ãâ·Â
-  ÇÁ·Î±×·¥ ÀÛ¼ºÀÚ : ½Å´ëÈ«(2022³â 9¿ù 23ÀÏ)
-  ÃÖÁ¾ Update : Version 1.0.0, 2022³â 9¿ù 23ÀÏ(½Å´ëÈ«)
+  íŒŒì¼ëª… : "HW4-1_21912193_ì‹ ëŒ€í™"
+  í”„ë¡œê·¸ëž¨ì˜ ëª©ì  ë° ê¸°ë³¸ ê¸°ëŠ¥:
+	- Cmplx í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ê³ , ì—°ì‚°ìž ì˜¤ë²„ë¡œë“œë¥¼ í†µí•´ ë°°ì—´ì„ ìƒì„±í›„, ì¶œë ¥
+  í”„ë¡œê·¸ëž¨ ìž‘ì„±ìž : ì‹ ëŒ€í™(2022ë…„ 9ì›” 23ì¼)
+  ìµœì¢… Update : Version 1.0.0, 2022ë…„ 9ì›” 23ì¼(ì‹ ëŒ€í™)
 ===========================================================================================================
-					ÇÁ·Î±×·¥ ¼öÁ¤/º¸¿Ï ÀÌ·Â
+					í”„ë¡œê·¸ëž¨ ìˆ˜ì •/ë³´ì™„ ì´ë ¥
 ===========================================================================================================
-   ¼öÁ¤ÀÚ		   ¼öÁ¤ÀÏ		 ¹öÀü			     ¼öÁ¤/º¸¿Ï³»¿ë
+   ìˆ˜ì •ìž		   ìˆ˜ì •ì¼		 ë²„ì „			     ìˆ˜ì •/ë³´ì™„ë‚´ìš©
 -----------------------------------------------------------------------------------------------------------
-	½Å´ëÈ«		 2022/09/23		v1.0.0		  ÃÖÃÊÀÛ¼º
+	ì‹ ëŒ€í™		 2022/09/23		v1.0.0		  ìµœì´ˆìž‘ì„±
 
 ===========================================================================================================
 */
@@ -29,24 +29,24 @@ int main(void)
 	ifstream fin;
 	CmplxArray cmplxs(7);
 
-	// ÆÄÀÏ¿­±â ½ÇÆÐ½Ã ¿À·ù¸Þ¼¼Áö Ãâ·Â ÈÄ °­Á¦Á¾·á
+	// íŒŒì¼ì—´ê¸° ì‹¤íŒ¨ì‹œ ì˜¤ë¥˜ë©”ì„¸ì§€ ì¶œë ¥ í›„ ê°•ì œì¢…ë£Œ
 	fin.open(INPUT);
 	if (fin.fail())
 	{
 		cout << "Error in open input.txt!!" << endl; exit(0);
 	}
 
-	// º¹¼Ò¼ö ÆÄÀÏ ÀÔ·Â
+	// ë³µì†Œìˆ˜ íŒŒì¼ ìž…ë ¥
 	fin >> cmplxs[0] >> cmplxs[1];
 
-	// º¹¼Ò¼ö ¿¬»ê
-	cmplxs[2] = cmplxs[0] + cmplxs[1];					// º¹¼Ò¼ö µ¡¼À
-	cmplxs[3] = cmplxs[0] - cmplxs[1];					// º¹¼Ò¼ö »¬¼À
-	cmplxs[4] = cmplxs[0] * cmplxs[1];					// º¹¼Ò¼ö °ö¼À
-	cmplxs[5] = cmplxs[0] / cmplxs[1];					// º¹¼Ò¼ö ³ª´°¼À
-	cmplxs[6] = ~cmplxs[0];								// º¹¼Ò¼ö ¹ÝÀü(À½ÀÇ º¹¼Ò¼ö·Î)
+	// ë³µì†Œìˆ˜ ì—°ì‚°
+	cmplxs[2] = cmplxs[0] + cmplxs[1];					// ë³µì†Œìˆ˜ ë§ì…ˆ
+	cmplxs[3] = cmplxs[0] - cmplxs[1];					// ë³µì†Œìˆ˜ ëº„ì…ˆ
+	cmplxs[4] = cmplxs[0] * cmplxs[1];					// ë³µì†Œìˆ˜ ê³±ì…ˆ
+	cmplxs[5] = cmplxs[0] / cmplxs[1];					// ë³µì†Œìˆ˜ ë‚˜ëˆ—ì…ˆ
+	cmplxs[6] = ~cmplxs[0];								// ë³µì†Œìˆ˜ ë°˜ì „(ìŒì˜ ë³µì†Œìˆ˜ë¡œ)
 
-	// º¹¼Ò¼ö Ãâ·Â
+	// ë³µì†Œìˆ˜ ì¶œë ¥
 	cout << "cmplxs[0] = " << cmplxs[0] << endl;
 	cout << "cmplxs[1] = " << cmplxs[1] << endl;
 	cout << "cmplxs[2] = cmplxs[0] + cmplxs[1] = " << cmplxs[2] << endl;
@@ -55,24 +55,24 @@ int main(void)
 	cout << "cmplxs[5] = cmplxs[0] / cmplxs[1] = " << cmplxs[5] << endl;
 	cout << "cmplxs[6] = ~cmplxs[0] (conjugate) = " << cmplxs[6] << endl;
 
-	// º¹¼Ò¼ö 1, º¹¼Ò¼ö 2°¡ ÀÏÄ¡ÇÏ´ÂÁö ºñ±³
-	if(cmplxs[0] == cmplxs[1])								// ¸ÂÀ¸¸é °°´Ù°í Ãâ·Â
+	// ë³µì†Œìˆ˜ 1, ë³µì†Œìˆ˜ 2ê°€ ì¼ì¹˜í•˜ëŠ”ì§€ ë¹„êµ
+	if(cmplxs[0] == cmplxs[1])								// ë§žìœ¼ë©´ ê°™ë‹¤ê³  ì¶œë ¥
 		cout << "cmplxs[0] is equal to cmplxs[1]" << endl;
 	else
-		cout << "cmplxs[0] is not equal to cmplxs[1]" << endl;		// ¾Æ´Ï¸é ¾Æ´Ï¶ó°í Ãâ·Â
+		cout << "cmplxs[0] is not equal to cmplxs[1]" << endl;		// ì•„ë‹ˆë©´ ì•„ë‹ˆë¼ê³  ì¶œë ¥
 
-	cmplxs[1] = cmplxs[0];									// º¹¼Ò¼ö1¿¡ º¹¼Ò¼ö2ÀÇ °ªÀ» ´ëÀÔ
+	cmplxs[1] = cmplxs[0];									// ë³µì†Œìˆ˜1ì— ë³µì†Œìˆ˜2ì˜ ê°’ì„ ëŒ€ìž…
 	cout << "After cmplxs[1] = cmplxs[0]; ==> " << endl;
 
-	// ´Ù½ÃÇÑ¹ø ÀÏÄ¡ÇÏ´ÂÁö ºñ±³ÇÔ
+	// ë‹¤ì‹œí•œë²ˆ ì¼ì¹˜í•˜ëŠ”ì§€ ë¹„êµí•¨
 	if (cmplxs[0] == cmplxs[1])
 		cout << "cmplxs[0] is equal to cmplxs[1]" << endl;
 	else
 		cout << "cmplxs[0] is not equal to cmplxs[1]" << endl;
 
-	cmplxs.sort();
-	cmplxs.print(cout);
-	//ÆÄÀÏ ´Ý±â 
+	//cmplxs.sort();
+	//cmplxs.print(cout);
+	//íŒŒì¼ ë‹«ê¸° 
 	fin.close();
 
 	return 0;
