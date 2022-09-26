@@ -1,4 +1,10 @@
 #include "CmplxArray.h"
+#include <iostream>
+#include <iomanip>
+
+#define MIN(x, y) ((x) < (y)) ? (x) : (y);						// MIN 매크로 함수
+
+using namespace std;
 
 CmplxArray::CmplxArray(int size) 							// constructor (생성자)
 {
@@ -37,6 +43,38 @@ Cmplx& CmplxArray::operator[](int sub)					// 연산자 오버로드 [ ] (배열의 인덱스
 		subError();
 
 	return pCA[sub];									// 정상이면 그대로 반환
+}
+void CmplxArray::print(ostream& fout)					// 배열 출력 함수
+{
+	for (int i = 0; i < cmplxArraySIZE; i++)
+	{
+		fout.copyfmt(std::ios(NULL));					// 형식들 모두 초기화
+		fout << "Cmplx[" << i << "] : " << pCA[i] << endl;		// 배열 요소 출력
+	}
+}
+void CmplxArray::sort()										// 선택정렬 ( 복소수 크기 기준 ) 
+{
+	Cmplx min;
+	int Index_min_NUM;										// 작은값의 인덱스 넘버
+
+	for (int round = 0; round < cmplxArraySIZE - 1; round++)
+	{
+		Index_min_NUM = round;								// 최소값의 인덱스 초기값(round) 설정
+		min = pCA[round];									// 최소값 초기값 설정
+		for (int i = round + 1; i < cmplxArraySIZE; i++)
+		{
+			if (pCA[i] < min)
+			{
+				Index_min_NUM = i;
+				min = pCA[i];
+			}
+		}
+		if (Index_min_NUM != round)						// 만약 가장 작은 값이 자기자신(기준값)이 아니라면
+		{
+			pCA[Index_min_NUM] = pCA[round];			// 찾았던 인덱스 주소안의 값을 기준값과 변경
+			pCA[round] = min;							// 가장작은값은 아까 저장했던 그 작은값.
+		}
+	}
 }
 void CmplxArray::subError()								// 배열 인덱스 에러 함수
 {
