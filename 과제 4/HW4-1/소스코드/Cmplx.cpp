@@ -41,61 +41,59 @@ Cmplx::Cmplx(double r, double i)						// constructor (생성자)
 		4. ~ 연산자 오버로드 ( 음의 복소수 )				*/
 const Cmplx Cmplx::operator+(const Cmplx& c)			// 연산자 오버로딩 ( + )
 {
-	Cmplx result;
-
+	double real, imag;
 	// (a + jb) + (c + jd) = (a + b) + j(c + d) 
 
-	result.real = real + c.real;						// 실수부분 덧셈
-	result.imag = imag + c.imag;						// 허수부분 덧셈
+	real = this->real + c.real;							// 실수부분 덧셈
+	imag = this->real + c.imag;							// 허수부분 덧셈
 
-	return result;
+	return Cmplx(real, imag);
 }
 const Cmplx Cmplx::operator-(const Cmplx&c)				// 연산자 오버로딩 ( - )
 {
-	Cmplx result;
+	double real, imag;
 
 	// (a + jb) - (c + jd) = (a - b) + j(c - d) 
 
-	result.real = real - c.real;						// 실수부분 뺼셈
-	result.imag = imag - c.imag;						// 허수부분 뺼셈
+	real = this->real - c.real;						// 실수부분 뺼셈
+	imag = this->imag - c.imag;						// 허수부분 뺼셈
 
-	return result;
+	return Cmplx(real, imag);
 }
 const Cmplx Cmplx::operator*(const Cmplx& c)			// 연산자 오버로딩 ( * )
 {
-	Cmplx result;
+	double real, imag;
 
 	// (a + jb)(c + jd) = (ac - bd) + j(bc + ad) (이차식 곱셈 이용)
 
-	result.real = (real * c.real) - (imag * c.imag);	// 실수부분 곱셈
-	result.imag = (real * c.imag) + (imag * c.real);	// 허수부분 곱셈
+	real = (this->real * c.real) - (this->imag * c.imag);	// 실수부분 곱셈
+	imag = (this->real * c.imag) + (this->imag * c.real);	// 허수부분 곱셈
 
-	return result;
+	return Cmplx(real, imag);
 }
 const Cmplx Cmplx::operator/(const Cmplx& c)			// 연산자 오버로딩 ( / )
 {
-	Cmplx result;
+	double real, imag;
 	double denom;
 
 	// (a + jb) / (c + jd) = ((ac + bd)/(c² + d²)) + j((bc - ad)/(c² + d²)) (통분 및 이차식 곱셈 이용)
 
 	denom = pow(c.real, 2) + pow(c.imag, 2);							// (c² + d²)		
 
-	result.real = ((real * c.real) + (imag * c.imag)) / denom;		// 실수부분 나눗셈 방식
-	result.imag = ((imag * c.real) - (real * c.imag)) / denom;		// 허수부분 나눗셈
+	real = ((this->real * c.real) + (this->imag * c.imag)) / denom;		// 실수부분 나눗셈 방식
+	imag = ((this->imag * c.real) - (this->real * c.imag)) / denom;		// 허수부분 나눗셈
 
-	return result;
+	return Cmplx(real, imag);
 }
 const Cmplx Cmplx::operator~()							// 연산자 오버로딩 ( ~ , 음의 복소수)
 {
-	Cmplx result;
-
+	double real, imag;
 	// ~(a +jb) = a - jb
 
-	result.real = real;									// 실수부분은 바뀌지 않고
-	result.imag = -imag;						// 허수부분은 음수가 된다
+	real = this->real;									// 실수부분은 바뀌지 않고
+	imag = -(this->imag);						// 허수부분은 음수가 된다
 
-	return result;
+	return Cmplx(real, imag);
 }
 
 /*						bool 연산자 오버로드	
@@ -115,14 +113,14 @@ double Cmplx::mag() const								// a +jb의 크기를 구함
 }
 bool Cmplx::operator==(const Cmplx& c)					// 연산자 오버로딩 ( == )
 {
-	if ((real == c.real) && (imag == c.imag))			// 만약 실수부분, 허수부분 모두 같다면 true
+	if ((this->real == c.real) && (this->imag == c.imag))			// 만약 실수부분, 허수부분 모두 같다면 true
 		return true;
 	else
 		return false;									// 그 어느것이라도 아니면 false
 }
 bool Cmplx::operator!=(const Cmplx& c)					// 연산자 오버로딩 ( != )
 {
-	if ((real == c.real) && (imag == c.imag))			// 위의 ==의 조건에 부합하면 false 반환
+	if ((this->real == c.real) && (this->imag == c.imag))			// 위의 ==의 조건에 부합하면 false 반환
 		return false;
 	else
 		return true;									// 그 외엔 모두 true
@@ -144,8 +142,8 @@ bool Cmplx::operator>(const Cmplx& c)					// 연산자 오버로딩 ( > )
 
 const Cmplx Cmplx::operator=(const Cmplx& c)
 {
-	real = c.real;
-	imag = c.imag;
+	this->real = c.real;
+	this->imag = c.imag;
 
 	return *this;
 }
