@@ -13,6 +13,8 @@ public:
 	~CmplxArray();									// desructor (소멸자)
 	int size() { return cmplxArraySIZE; }			// 배열 크기 반환
 	Cmplx& operator[](int sub);						// 배열 연산자 오버로드 []
+	void print(ostream& fout);						// 복소수 배열 출력
+	void sort();									// 선택정렬 함수
 private:
 	Cmplx* pCA;										// Cmplx의 배열을 담는 변수
 	int cmplxArraySIZE;								// Cmplx배열의 크기
