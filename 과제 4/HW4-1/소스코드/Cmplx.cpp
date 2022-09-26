@@ -140,11 +140,11 @@ bool Cmplx::operator>(const Cmplx& c)					// 연산자 오버로딩 ( > )
 		return false;									// 아니면 false
 }
 
-const Cmplx Cmplx::operator=(const Cmplx& c)
+const Cmplx Cmplx::operator=(const Cmplx& c)			// 연산자 오버로딩 ( = )
 {
-	this->real = c.real;
-	this->imag = c.imag;
+	this->real = c.real;								// 실수부분 대입
+	this->imag = c.imag;								// 허수부분 대입
 
-	return *this;
+	return *this;										// 자기자신 반환
 }
 
