@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Elps : public Shape				// Å¸¿ø Å¬·¡½º ellipse ( Shape¸¦ »ó¼Ó ¹ŞÀ½ ) 
+class Elps : public Shape				// íƒ€ì› í´ë˜ìŠ¤ ellipse ( Shapeë¥¼ ìƒì† ë°›ìŒ ) 
 {
 	friend ostream& operator<< (ostream&, const Elps&);
 
@@ -22,18 +22,18 @@ public:
 	~Elps();
 
 	//member functions
-	void draw();										// Å¸¿ø ±×¸®±â ÇÔ¼ö
-	void print(ostream&) const;							// Elps °´Ã¼ 
+	void draw();										// íƒ€ì› ê·¸ë¦¬ê¸° í•¨ìˆ˜
+	void print(ostream&) const;							// Elps ê°ì²´ 
 
 	// getter
 	double Area() const;
-	double Radius_1() const { return radius_1; }		// °¡·Î ¹İÁö¸§ r1
-	double Radius_2() const { return radius_2; }		// ¼¼·Î ¹İÁö¸§ r2
+	double Radius_1() const { return radius_1; }		// ê°€ë¡œ ë°˜ì§€ë¦„ r1
+	double Radius_2() const { return radius_2; }		// ì„¸ë¡œ ë°˜ì§€ë¦„ r2
 	
 	// setter
-	void setRadius(double r1, double r2) { radius_1 = r1, radius_2 = r2; }	// Å¸¿ø ¹İÁö¸§ ¼³Á¤
+	void setRadius(double r1, double r2) { radius_1 = r1, radius_2 = r2; }	// íƒ€ì› ë°˜ì§€ë¦„ ì„¤ì •
 
-	
+	// operator Overloading
 	Elps& operator=(const Elps& elp);
 
 protected:
