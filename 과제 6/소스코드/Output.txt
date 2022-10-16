@@ -1,0 +1,10 @@
+Shape::draw() => [name(Blue Shape), pos(1, 1), color(RGB(00, 00, FF))]
+Triangle::draw() => [name(Red Triangle), pos(2, 2), Base (3), tri_Height (4), Color (RGB(FF, 00, 00)), Tri_Area (6)]
+Prism::draw() => [name(Green Prism), pos(3, 3), base (6), height (7), Base Area (21), Color (RGB(00, FF, 00)), 
+	Prism height (8), Prism Surface Area (211.852), Prism Volume (168)]
+Rect::draw() => [name(Yellow Rectangle), pos(4, 4), width (1), lenght (2), Color (RGB(FF, FF, 00)), Rect_Area (2)]
+Hexahedron::draw() => [name(Orange Hexahedtron), pos(5, 5), Width (5), Lenght (6), Height (7), Color (RGB(FF, A5, 00)), 
+	Hexahedron Surface Area (214), Hexahedron Volume (210)]
+Circle::draw() => [name(Magenta Circle), pos(6, 6), Radius (6), Color (RGB(FF, 00, FF)), Circle_Area (113.097)]
+Cylinder::draw() => [name(White Cylinder), pos(7, 7), radius (8), Height (6), Color (RGB(FF, FF, FF)), 
+	Cylinder Surface Area (703.717), Cylinder Volume (1206.37)]
