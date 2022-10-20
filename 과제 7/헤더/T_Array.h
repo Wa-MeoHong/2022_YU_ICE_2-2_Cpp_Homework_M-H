@@ -10,7 +10,7 @@ using namespace std;
 // 오름차순, 내림차순
 enum SortingOrder { INCREASING = 0, DECREASING = 1};
 
-template <typename T>// 클래스를 탬플릿으로 지정함
+template <typename T>						// 클래스를 탬플릿으로 지정함
 class T_Array
 {
 public:
@@ -344,10 +344,10 @@ inline void T_Array<T>::selection_sort(SortingOrder order)
 			for (int j = i + 1; j < num_elements; j++)
 			{
 				// 가장 작은 값 찾기
-				if (t_array[i] < minValue)	// 만약 t_array[i]가 minValue보다 작다면
+				if (t_array[j] < minValue)	// 만약 t_array[i]가 minValue보다 작다면
 				{
-					minValue = t_array[i];	// 최소값 갱신
-					In_Min = i;
+					minValue = t_array[j];	// 최소값 갱신
+					In_Min = j;
 				}
 			}
 			// Swaping
@@ -364,11 +364,11 @@ inline void T_Array<T>::selection_sort(SortingOrder order)
 			for (int j = i + 1; j < num_elements; j++)
 			{
 				// 가장 큰 값 찾기
-				if (t_array[i] > maxValue)
+				if (t_array[j] > maxValue)
 				{
 					// 만약 t_array[i]가 maxValue보다 더 크다면 갱신
-					maxValue = t_array[i];
-					In_Max = i;
+					maxValue = t_array[j];
+					In_Max = j;
 				}
 			}
 			// Swaping
@@ -427,13 +427,29 @@ int _partition(T* array, int size, int left, int right, int PivotIndex, SortingO
 	for (int i = left; i <= right - 1; i++)
 		// 맨뒤로 가게된 PivotValue는 빼고 나머지 배열들을 범위로 잡는다.
 	{
-		if (array[i] <= PivotValue)							//만약 맨뒤로 간 PivotValue보다 값이 작다면
+		// 오름차순
+		if (order == INCREASING)
 		{
-			temp = array[i];
-			array[i] = array[newPI];
-			array[newPI] = temp;							// 현재(i)위치에 있는 값을 newPI에 있는 값과와 바꿔준다.
-			newPI += 1;
+			if (array[i] <= PivotValue)							//만약 맨뒤로 간 PivotValue보다 값이 작다면
+			{
+				temp = array[i];
+				array[i] = array[newPI];
+				array[newPI] = temp;							// 현재(i)위치에 있는 값을 newPI에 있는 값과와 바꿔준다.
+				newPI += 1;
+			}
 		}
+		// 내림차순
+		else
+		{
+			if (array[i] > PivotValue)							//만약 맨뒤로 간 PivotValue보다 값이 작다면
+			{
+				temp = array[i];
+				array[i] = array[newPI];
+				array[newPI] = temp;							// 현재(i)위치에 있는 값을 newPI에 있는 값과와 바꿔준다.
+				newPI += 1;
+			}
+		}
+	
 	}
 	// 결론적으로 처음 PivotValue값을 기준으로 왼쪽은 PivotValue보다 작은 값들의 배열, 오른쪽은 PivotValue보다 큰 값들의 배열이 형성되었다.
 	PivotValue = array[right];
