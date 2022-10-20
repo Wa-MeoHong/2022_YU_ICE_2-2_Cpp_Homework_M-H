@@ -86,10 +86,10 @@ ostream& operator<<(ostream& ostr, const Student& st)
 		<< Person(st) << ", "
 		<< "arrival: " << st.arrivalTime << ", ";
 
-	ostr.setf(ios::showpoint); ostr.setf(ios::fixed);						// 고정 소수점 2자리까지만 출력
+	ostr.setf(ios::showpoint); ostr.setf(ios::fixed);		// 고정 소수점 2자리까지만 출력
 	ostr.precision(2);
 	ostr << "gpa: " << st.GPA() << "]";
-	ostr.unsetf(ios::adjustfield);
+	ostr.unsetf(ios::adjustfield);					// 출력 형식 초기화
 	
 	return ostr;
 	// TODO: 여기에 return 문을 삽입합니다.

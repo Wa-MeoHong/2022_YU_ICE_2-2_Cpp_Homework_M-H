@@ -39,7 +39,8 @@ istream& operator>>(istream& input, Date& D)
 ostream& operator<<(ostream& output, const Date& D)
 {
 	output << "(" << setw(4) << D.Year() << "."
-		<< setw(2) << D.Month() << "." << setw(2) << D.Day() << ")";
+		<< setw(2) << right << D.Month() << "." 
+		<< setw(2) << right << D.Day() << ")";
 
 	return output;
 	// TODO: 여기에 return 문을 삽입합니다.
