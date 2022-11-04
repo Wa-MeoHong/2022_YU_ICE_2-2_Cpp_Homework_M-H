@@ -1,0 +1,197 @@
+Insert 14 ==> Size of Heap Priority Queue :   1
+Insert 13 ==> Size of Heap Priority Queue :   2
+Insert 12 ==> Size of Heap Priority Queue :   3
+Insert 11 ==> Size of Heap Priority Queue :   4
+Insert 10 ==> Size of Heap Priority Queue :   5
+Insert  9 ==> Size of Heap Priority Queue :   6
+Insert  8 ==> Size of Heap Priority Queue :   7
+Insert  7 ==> Size of Heap Priority Queue :   8
+Insert  6 ==> Size of Heap Priority Queue :   9
+Insert  5 ==> Size of Heap Priority Queue :  10
+Insert  4 ==> Size of Heap Priority Queue :  11
+Insert  3 ==> Size of Heap Priority Queue :  12
+Insert  2 ==> Size of Heap Priority Queue :  13
+Insert  1 ==> Size of Heap Priority Queue :  14
+Insert  0 ==> Size of Heap Priority Queue :  15
+Final status of insertions : 
+			 3
+		 2
+			10
+	 1
+			 9
+		 4
+			13
+ 0
+			 7
+		 6
+			12
+	 5
+			11
+		 8
+			14
+
+Current top priority in Heap Priority Queue :   0
+RemoveMin (0) from HeapPriQ_int ==> 14elements remains.
+		 3
+			10
+	 2
+			 9
+		 4
+			13
+ 1
+			 7
+		 6
+			12
+	 5
+			11
+		 8
+			14
+
+
+Current top priority in Heap Priority Queue :   1
+RemoveMin (1) from HeapPriQ_int ==> 13elements remains.
+		10
+	 3
+			 9
+		 4
+			13
+ 2
+			 7
+		 6
+			12
+	 5
+			11
+		 8
+			14
+
+
+Current top priority in Heap Priority Queue :   2
+RemoveMin (2) from HeapPriQ_int ==> 12elements remains.
+		10
+	 4
+		 9
+			13
+ 3
+			 7
+		 6
+			12
+	 5
+			11
+		 8
+			14
+
+
+Current top priority in Heap Priority Queue :   3
+RemoveMin (3) from HeapPriQ_int ==> 11elements remains.
+		10
+	 9
+		13
+ 4
+			 7
+		 6
+			12
+	 5
+			11
+		 8
+			14
+
+
+Current top priority in Heap Priority Queue :   4
+RemoveMin (4) from HeapPriQ_int ==> 10elements remains.
+		10
+	 9
+		13
+ 5
+		 7
+			12
+	 6
+			11
+		 8
+			14
+
+
+Current top priority in Heap Priority Queue :   5
+RemoveMin (5) from HeapPriQ_int ==> 9elements remains.
+		10
+	 9
+		13
+ 6
+		12
+	 7
+			11
+		 8
+			14
+
+
+Current top priority in Heap Priority Queue :   6
+RemoveMin (6) from HeapPriQ_int ==> 8elements remains.
+		10
+	 9
+		13
+ 7
+		12
+	 8
+		11
+			14
+
+
+Current top priority in Heap Priority Queue :   7
+RemoveMin (7) from HeapPriQ_int ==> 7elements remains.
+		10
+	 9
+		13
+ 8
+		12
+	11
+		14
+
+
+Current top priority in Heap Priority Queue :   8
+RemoveMin (8) from HeapPriQ_int ==> 6elements remains.
+	10
+		13
+ 9
+		12
+	11
+		14
+
+
+Current top priority in Heap Priority Queue :   9
+RemoveMin (9) from HeapPriQ_int ==> 5elements remains.
+	13
+10
+		12
+	11
+		14
+
+
+Current top priority in Heap Priority Queue :  10
+RemoveMin (10) from HeapPriQ_int ==> 4elements remains.
+	13
+11
+	12
+		14
+
+
+Current top priority in Heap Priority Queue :  11
+RemoveMin (11) from HeapPriQ_int ==> 3elements remains.
+	13
+12
+	14
+
+
+Current top priority in Heap Priority Queue :  12
+RemoveMin (12) from HeapPriQ_int ==> 2elements remains.
+13
+	14
+
+
+Current top priority in Heap Priority Queue :  13
+RemoveMin (13) from HeapPriQ_int ==> 1elements remains.
+14
+
+
+Current top priority in Heap Priority Queue :  14
+RemoveMin (14) from HeapPriQ_int ==> 0elements remains.
+CBT is Empty now !! 
+
