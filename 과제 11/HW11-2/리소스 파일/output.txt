@@ -1,0 +1,208 @@
+Inserting My Vocabularies to MyVocaDict . . . 
+Total 20 words in my Voca_Dictionary .. 
+
+knowledgeable(adj):
+ - thesaurus(well-informed, acquainted, aware, )
+ - example usage(school-age children who were very knowledgeable about soccer )
+
+ensure(v):
+ - thesaurus(make sure, confirm, certify, )
+ - example usage(The company's sole concern is to ensure the safety of its employees )
+
+sensitive(adj):
+ - thesaurus(thoughtful, kind, )
+ - example usage(He was always so sensitive and caring. )
+
+universal(adj):
+ - thesaurus(widespread, general, )
+ - example usage(proposals for universal health care )
+
+ideal(adj):
+ - thesaurus(imaginary, impractical, poetic, )
+ - example usage(Their ideal society collapsed around them in revolution. )
+
+ideal(n):
+ - thesaurus(principle, standard, )
+ - example usage(The party has drifted too far from its socialist ideals )
+
+precious(adj):
+ - thesaurus(valuable, prized, )
+ - example usage(jewellery and precious objects belonging to her mother )
+
+overall(adv):
+ - thesaurus(generally, mostly, )
+ - example usage(Overall, I was disappointed with the result. )
+
+overall(adj):
+ - thesaurus(total, whole, general, )
+ - example usage(The council needs to cut down its overall spending. )
+
+interact(adj):
+ - thesaurus(unrelated, )
+ - example usage(irrelevant details )
+
+access(v):
+ - thesaurus(get, acquire, obtain, )
+ - example usage(We can access the Internet wherever we are with our smart phone. )
+
+access(n):
+ - thesaurus(admission, entry, passage, ingress, )
+ - example usage( access potnt  Do not Access this area )
+
+markedly(adj):
+ - thesaurus(noticeably, obviously, )
+ - example usage(The quality of their relationship improved markedly. )
+
+handle(v):
+ - thesaurus(manage, deal with, )
+ - example usage(A new man was appointed to handle the crisis. )
+
+handle(n):
+ - thesaurus(opprotunity, chance, occasion, )
+ - example usage(That's some handle to go through life with! )
+
+independent(adj):
+ - thesaurus(separate, )
+ - example usage(Two independent studies have been carried out. )
+
+radical(adj):
+ - thesaurus(extreme, )
+ - example usage(periods of radical change )
+
+name(v):
+ - thesaurus(call, christen, )
+ - example usage(My mother insisted on naming me Horace. )
+
+name(n):
+ - thesaurus(title, )
+ - example usage(I don't even know if Sullivan is his real name. )
+
+decline(v):
+ - thesaurus(fall, contract, )
+ - example usage(a declining birth rate )
+
+
+Buktet[  0] : 1entries
+Buktet[  1] : 1entries
+Buktet[  2] : 0entries
+Buktet[  3] : 0entries
+Buktet[  4] : 0entries
+Buktet[  5] : 1entries
+Buktet[  6] : 0entries
+Buktet[  7] : 0entries
+Buktet[  8] : 0entries
+Buktet[  9] : 0entries
+Buktet[ 10] : 0entries
+Buktet[ 11] : 0entries
+Buktet[ 12] : 1entries
+Buktet[ 13] : 2entries
+Buktet[ 14] : 0entries
+Buktet[ 15] : 0entries
+Buktet[ 16] : 0entries
+Buktet[ 17] : 0entries
+Buktet[ 18] : 0entries
+Buktet[ 19] : 0entries
+Buktet[ 20] : 0entries
+Buktet[ 21] : 0entries
+Buktet[ 22] : 0entries
+Buktet[ 23] : 0entries
+Buktet[ 24] : 0entries
+Buktet[ 25] : 0entries
+Buktet[ 26] : 0entries
+Buktet[ 27] : 0entries
+Buktet[ 28] : 1entries
+Buktet[ 29] : 0entries
+Buktet[ 30] : 2entries
+Buktet[ 31] : 0entries
+Buktet[ 32] : 0entries
+Buktet[ 33] : 0entries
+Buktet[ 34] : 0entries
+Buktet[ 35] : 0entries
+Buktet[ 36] : 0entries
+Buktet[ 37] : 1entries
+Buktet[ 38] : 0entries
+Buktet[ 39] : 0entries
+Buktet[ 40] : 0entries
+Buktet[ 41] : 0entries
+Buktet[ 42] : 0entries
+Buktet[ 43] : 0entries
+Buktet[ 44] : 0entries
+Buktet[ 45] : 0entries
+Buktet[ 46] : 0entries
+Buktet[ 47] : 0entries
+Buktet[ 48] : 0entries
+Buktet[ 49] : 0entries
+Buktet[ 50] : 0entries
+Buktet[ 51] : 0entries
+Buktet[ 52] : 0entries
+Buktet[ 53] : 0entries
+Buktet[ 54] : 2entries
+Buktet[ 55] : 0entries
+Buktet[ 56] : 0entries
+Buktet[ 57] : 0entries
+Buktet[ 58] : 0entries
+Buktet[ 59] : 1entries
+Buktet[ 60] : 0entries
+Buktet[ 61] : 0entries
+Buktet[ 62] : 0entries
+Buktet[ 63] : 0entries
+Buktet[ 64] : 0entries
+Buktet[ 65] : 2entries
+Buktet[ 66] : 0entries
+Buktet[ 67] : 0entries
+Buktet[ 68] : 0entries
+Buktet[ 69] : 0entries
+Buktet[ 70] : 0entries
+Buktet[ 71] : 0entries
+Buktet[ 72] : 0entries
+Buktet[ 73] : 0entries
+Buktet[ 74] : 0entries
+Buktet[ 75] : 0entries
+Buktet[ 76] : 0entries
+Buktet[ 77] : 0entries
+Buktet[ 78] : 0entries
+Buktet[ 79] : 0entries
+Buktet[ 80] : 0entries
+Buktet[ 81] : 1entries
+Buktet[ 82] : 0entries
+Buktet[ 83] : 0entries
+Buktet[ 84] : 0entries
+Buktet[ 85] : 0entries
+Buktet[ 86] : 0entries
+Buktet[ 87] : 0entries
+Buktet[ 88] : 0entries
+Buktet[ 89] : 1entries
+Buktet[ 90] : 0entries
+Buktet[ 91] : 2entries
+Buktet[ 92] : 0entries
+Buktet[ 93] : 0entries
+Buktet[ 94] : 1entries
+Buktet[ 95] : 0entries
+Buktet[ 96] : 0entries
+Buktet[ 97] : 0entries
+Buktet[ 98] : 0entries
+Buktet[ 99] : 0entries
+Buktet[100] : 0entries
+
+Max_ent ( 2), min_ent ( 0), avg (  0.2)
+ 
+Bucket with maximum (2) entries : 
+ideal(adj):
+ - thesaurus(imaginary, impractical, poetic, )
+ - example usage(Their ideal society collapsed around them in revolution. )
+
+ideal(n):
+ - thesaurus(principle, standard, )
+ - example usage(The party has drifted too far from its socialist ideals )
+
+
+Thesaurus of [name]:
+name(v):
+ - thesaurus(call, christen, )
+ - example usage(My mother insisted on naming me Horace. )
+
+name(n):
+ - thesaurus(title, )
+ - example usage(I don't even know if Sullivan is his real name. )
+
+

@@ -1,0 +1,505 @@
+
+===================================================
+Text SkipList<int, MyVoca> . . . 
+Inserting Vocas to Voca SkipList . . . 
+Inserting Voca[0]:
+access(n):
+ - thesaurus(admission, entry, passage, ingress, )
+ - example usage( access potnt  Do not Access this area )
+
+insert a node (1at level 0 )
+Print SkipList Inside :  current height (1)
+level 1 -oo-----+oo
+level 0 -oo-   1+oo
+
+
+Inserting Voca[1]:
+independent(adj):
+ - thesaurus(separate, )
+ - example usage(Two independent studies have been carried out. )
+
+insert a node (2at level 0 )
+Print SkipList Inside :  current height (1)
+level 1 -oo----------+oo
+level 0 -oo-   1-   2+oo
+
+
+Inserting Voca[2]:
+interact(adj):
+ - thesaurus(unrelated, )
+ - example usage(irrelevant details )
+
+insert a node (3at level 0 )
+Print SkipList Inside :  current height (3)
+level 3 -oo---------------+oo
+level 2 -oo-----------   3+oo
+level 1 -oo-----------   3+oo
+level 0 -oo-   1-   2-   3+oo
+
+
+Inserting Voca[3]:
+access(v):
+ - thesaurus(get, acquire, obtain, )
+ - example usage(We can access the Internet wherever we are with our smart phone. )
+
+insert a node (4at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo--------------------+oo
+level 5 -oo----------------   4+oo
+level 4 -oo----------------   4+oo
+level 3 -oo----------------   4+oo
+level 2 -oo-----------   3-   4+oo
+level 1 -oo-----------   3-   4+oo
+level 0 -oo-   1-   2-   3-   4+oo
+
+
+Inserting Voca[4]:
+ensure(v):
+ - thesaurus(make sure, confirm, certify, )
+ - example usage(The company's sole concern is to ensure the safety of its employees )
+
+insert a node (5at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo-------------------------+oo
+level 5 -oo----------------   4-----+oo
+level 4 -oo----------------   4-----+oo
+level 3 -oo----------------   4-----+oo
+level 2 -oo-----------   3-   4-----+oo
+level 1 -oo-----------   3-   4-----+oo
+level 0 -oo-   1-   2-   3-   4-   5+oo
+
+
+Inserting Voca[5]:
+markedly(adj):
+ - thesaurus(noticeably, obviously, )
+ - example usage(The quality of their relationship improved markedly. )
+
+insert a node (6at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo------------------------------+oo
+level 5 -oo----------------   4----------+oo
+level 4 -oo----------------   4----------+oo
+level 3 -oo----------------   4----------+oo
+level 2 -oo-----------   3-   4----------+oo
+level 1 -oo-----------   3-   4----------+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6+oo
+
+
+Inserting Voca[6]:
+name(n):
+ - thesaurus(title, )
+ - example usage(I don't even know if Sullivan is his real name. )
+
+insert a node (7at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo-----------------------------------+oo
+level 5 -oo----------------   4---------------+oo
+level 4 -oo----------------   4---------------+oo
+level 3 -oo----------------   4---------------+oo
+level 2 -oo-----------   3-   4---------------+oo
+level 1 -oo-----------   3-   4---------------+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7+oo
+
+
+Inserting Voca[7]:
+name(v):
+ - thesaurus(call, christen, )
+ - example usage(My mother insisted on naming me Horace. )
+
+insert a node (8at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo----------------------------------------+oo
+level 5 -oo----------------   4--------------------+oo
+level 4 -oo----------------   4--------------------+oo
+level 3 -oo----------------   4--------------------+oo
+level 2 -oo-----------   3-   4--------------------+oo
+level 1 -oo-----------   3-   4--------------------+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8+oo
+
+
+Inserting Voca[8]:
+handle(n):
+ - thesaurus(opprotunity, chance, occasion, )
+ - example usage(That's some handle to go through life with! )
+
+insert a node (9at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo---------------------------------------------+oo
+level 5 -oo----------------   4-------------------------+oo
+level 4 -oo----------------   4-------------------------+oo
+level 3 -oo----------------   4-------------------------+oo
+level 2 -oo-----------   3-   4-------------------------+oo
+level 1 -oo-----------   3-   4-------------------------+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9+oo
+
+
+Inserting Voca[9]:
+handle(v):
+ - thesaurus(manage, deal with, )
+ - example usage(A new man was appointed to handle the crisis. )
+
+insert a node (10at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo--------------------------------------------------+oo
+level 5 -oo----------------   4------------------------------+oo
+level 4 -oo----------------   4------------------------------+oo
+level 3 -oo----------------   4------------------------------+oo
+level 2 -oo-----------   3-   4------------------------------+oo
+level 1 -oo-----------   3-   4------------------------------+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10+oo
+
+
+Inserting Voca[10]:
+ideal(n):
+ - thesaurus(principle, standard, )
+ - example usage(The party has drifted too far from its socialist ideals )
+
+insert a node (11at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo-------------------------------------------------------+oo
+level 5 -oo----------------   4-----------------------------------+oo
+level 4 -oo----------------   4-----------------------------------+oo
+level 3 -oo----------------   4-----------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------+oo
+level 1 -oo-----------   3-   4-------------------------------  11+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11+oo
+
+
+Inserting Voca[11]:
+ideal(adj):
+ - thesaurus(imaginary, impractical, poetic, )
+ - example usage(Their ideal society collapsed around them in revolution. )
+
+insert a node (12at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo------------------------------------------------------------+oo
+level 5 -oo----------------   4----------------------------------------+oo
+level 4 -oo----------------   4----------------------------------------+oo
+level 3 -oo----------------   4----------------------------------------+oo
+level 2 -oo-----------   3-   4----------------------------------------+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12+oo
+
+
+Inserting Voca[12]:
+knowledgeable(adj):
+ - thesaurus(well-informed, acquainted, aware, )
+ - example usage(school-age children who were very knowledgeable about soccer )
+
+insert a node (13at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo-----------------------------------------------------------------+oo
+level 5 -oo----------------   4---------------------------------------------+oo
+level 4 -oo----------------   4---------------------------------------------+oo
+level 3 -oo----------------   4---------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13+oo
+
+
+Inserting Voca[13]:
+locate(v):
+ - thesaurus(find, discover, )
+ - example usage(We've simply been unable to locate him. )
+
+insert a node (14at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo----------------------------------------------------------------------+oo
+level 5 -oo----------------   4--------------------------------------------------+oo
+level 4 -oo----------------   4--------------------------------------------------+oo
+level 3 -oo----------------   4--------------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13-  14+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13-  14+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14+oo
+
+
+Inserting Voca[14]:
+overall(adj):
+ - thesaurus(total, whole, general, )
+ - example usage(The council needs to cut down its overall spending. )
+
+insert a node (15at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo---------------------------------------------------------------------------+oo
+level 5 -oo----------------   4-------------------------------------------------------+oo
+level 4 -oo----------------   4-------------------------------------------------------+oo
+level 3 -oo----------------   4-------------------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13-  14-  15+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13-  14-  15+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15+oo
+
+
+Inserting Voca[15]:
+overall(adv):
+ - thesaurus(generally, mostly, )
+ - example usage(Overall, I was disappointed with the result. )
+
+insert a node (16at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo--------------------------------------------------------------------------------+oo
+level 5 -oo----------------   4------------------------------------------------------------+oo
+level 4 -oo----------------   4------------------------------------------------------------+oo
+level 3 -oo----------------   4------------------------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13-  14-  15-----+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13-  14-  15-----+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16+oo
+
+
+Inserting Voca[16]:
+precious(adj):
+ - thesaurus(valuable, prized, )
+ - example usage(jewellery and precious objects belonging to her mother )
+
+insert a node (17at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo-------------------------------------------------------------------------------------+oo
+level 5 -oo----------------   4-----------------------------------------------------------------+oo
+level 4 -oo----------------   4-----------------------------------------------------------------+oo
+level 3 -oo----------------   4-----------------------------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13-  14-  15----------+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13-  14-  15------  17+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17+oo
+
+
+Inserting Voca[17]:
+radical(adj):
+ - thesaurus(extreme, )
+ - example usage(periods of radical change )
+
+insert a node (18at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo------------------------------------------------------------------------------------------+oo
+level 5 -oo----------------   4----------------------------------------------------------------------+oo
+level 4 -oo----------------   4----------------------------------------------------------------------+oo
+level 3 -oo----------------   4----------------------------------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13-  14-  15---------------+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13-  14-  15------  17-  18+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18+oo
+
+
+Inserting Voca[18]:
+universal(adj):
+ - thesaurus(widespread, general, )
+ - example usage(proposals for universal health care )
+
+insert a node (19at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo-----------------------------------------------------------------------------------------------+oo
+level 5 -oo----------------   4---------------------------------------------------------------------------+oo
+level 4 -oo----------------   4---------------------------------------------------------------------------+oo
+level 3 -oo----------------   4---------------------------------------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13-  14-  15--------------------+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13-  14-  15------  17-  18-  19+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19+oo
+
+
+Inserting Voca[19]:
+decline(v):
+ - thesaurus(fall, contract, )
+ - example usage(a declining birth rate )
+
+insert a node (20at level 0 )
+Print SkipList Inside :  current height (6)
+level 6 -oo----------------------------------------------------------------------------------------------------+oo
+level 5 -oo----------------   4--------------------------------------------------------------------------------+oo
+level 4 -oo----------------   4--------------------------------------------------------------------------------+oo
+level 3 -oo----------------   4--------------------------------------------------------------------------------+oo
+level 2 -oo-----------   3-   4-----------------------------------------  13-  14-  15-------------------------+oo
+level 1 -oo-----------   3-   4-------------------------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   1-   2-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+
+*********************
+Search planetSkipList and delete the Voca (2 ) : 00007FF67551D6E8
+Deleted skip list node (Key : 2)
+Print SkipList Inside :  current height (6)
+level 6 -oo-----------------------------------------------------------------------------------------------+oo
+level 5 -oo-----------   4--------------------------------------------------------------------------------+oo
+level 4 -oo-----------   4--------------------------------------------------------------------------------+oo
+level 3 -oo-----------   4--------------------------------------------------------------------------------+oo
+level 2 -oo------   3-   4-----------------------------------------  13-  14-  15-------------------------+oo
+level 1 -oo------   3-   4-------------------------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   1-   3-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (3 ) : 00007FF67551D750
+Deleted skip list node (Key : 3)
+Print SkipList Inside :  current height (6)
+level 6 -oo------------------------------------------------------------------------------------------+oo
+level 5 -oo------   4--------------------------------------------------------------------------------+oo
+level 4 -oo------   4--------------------------------------------------------------------------------+oo
+level 3 -oo------   4--------------------------------------------------------------------------------+oo
+level 2 -oo------   4-----------------------------------------  13-  14-  15-------------------------+oo
+level 1 -oo------   4-------------------------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   1-   4-   5-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (5 ) : 00007FF67551D820
+Deleted skip list node (Key : 5)
+Print SkipList Inside :  current height (6)
+level 6 -oo-------------------------------------------------------------------------------------+oo
+level 5 -oo------   4---------------------------------------------------------------------------+oo
+level 4 -oo------   4---------------------------------------------------------------------------+oo
+level 3 -oo------   4---------------------------------------------------------------------------+oo
+level 2 -oo------   4------------------------------------  13-  14-  15-------------------------+oo
+level 1 -oo------   4--------------------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   1-   4-   6-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (6 ) : 00007FF67551D888
+Deleted skip list node (Key : 6)
+Print SkipList Inside :  current height (6)
+level 6 -oo--------------------------------------------------------------------------------+oo
+level 5 -oo------   4----------------------------------------------------------------------+oo
+level 4 -oo------   4----------------------------------------------------------------------+oo
+level 3 -oo------   4----------------------------------------------------------------------+oo
+level 2 -oo------   4-------------------------------  13-  14-  15-------------------------+oo
+level 1 -oo------   4---------------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   1-   4-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (1 ) : 00007FF67551D680
+Deleted skip list node (Key : 1)
+Print SkipList Inside :  current height (6)
+level 6 -oo---------------------------------------------------------------------------+oo
+level 5 -oo-   4----------------------------------------------------------------------+oo
+level 4 -oo-   4----------------------------------------------------------------------+oo
+level 3 -oo-   4----------------------------------------------------------------------+oo
+level 2 -oo-   4-------------------------------  13-  14-  15-------------------------+oo
+level 1 -oo-   4---------------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   4-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (4 ) : 00007FF67551D7B8
+Deleted skip list node (Key : 4)
+Current height is less than the new h_max (3) ==> need adjustment !!
+Print SkipList Inside :  current height (3)
+level 3 -oo----------------------------------------------------------------------+oo
+level 2 -oo-------------------------------  13-  14-  15-------------------------+oo
+level 1 -oo---------------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   7-   8-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (8 ) : 00007FF67551D958
+Deleted skip list node (Key : 8)
+Print SkipList Inside :  current height (3)
+level 3 -oo-----------------------------------------------------------------+oo
+level 2 -oo--------------------------  13-  14-  15-------------------------+oo
+level 1 -oo----------------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   7-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (7 ) : 00007FF67551D8F0
+Deleted skip list node (Key : 7)
+Print SkipList Inside :  current height (3)
+level 3 -oo------------------------------------------------------------+oo
+level 2 -oo---------------------  13-  14-  15-------------------------+oo
+level 1 -oo-----------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   9-  10-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (10 ) : 00007FF67551DA28
+Deleted skip list node (Key : 10)
+Print SkipList Inside :  current height (3)
+level 3 -oo-------------------------------------------------------+oo
+level 2 -oo----------------  13-  14-  15-------------------------+oo
+level 1 -oo------  11-  12-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   9-  11-  12-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (12 ) : 00007FF67551DAF8
+Deleted skip list node (Key : 12)
+Print SkipList Inside :  current height (3)
+level 3 -oo--------------------------------------------------+oo
+level 2 -oo-----------  13-  14-  15-------------------------+oo
+level 1 -oo------  11-  13-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   9-  11-  13-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (13 ) : 00007FF67551DB60
+Deleted skip list node (Key : 13)
+Print SkipList Inside :  current height (3)
+level 3 -oo---------------------------------------------+oo
+level 2 -oo-----------  14-  15-------------------------+oo
+level 1 -oo------  11-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   9-  11-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (11 ) : 00007FF67551DA90
+Deleted skip list node (Key : 11)
+Print SkipList Inside :  current height (3)
+level 3 -oo----------------------------------------+oo
+level 2 -oo------  14-  15-------------------------+oo
+level 1 -oo------  14-  15------  17-  18-  19-----+oo
+level 0 -oo-   9-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (9 ) : 00007FF67551D9C0
+Deleted skip list node (Key : 9)
+Print SkipList Inside :  current height (3)
+level 3 -oo-----------------------------------+oo
+level 2 -oo-  14-  15-------------------------+oo
+level 1 -oo-  14-  15------  17-  18-  19-----+oo
+level 0 -oo-  14-  15-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (15 ) : 00007FF67551DC30
+Deleted skip list node (Key : 15)
+Print SkipList Inside :  current height (3)
+level 3 -oo------------------------------+oo
+level 2 -oo-  14-------------------------+oo
+level 1 -oo-  14------  17-  18-  19-----+oo
+level 0 -oo-  14-  16-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (16 ) : 00007FF67551DC98
+Deleted skip list node (Key : 16)
+Print SkipList Inside :  current height (3)
+level 3 -oo-------------------------+oo
+level 2 -oo-  14--------------------+oo
+level 1 -oo-  14-  17-  18-  19-----+oo
+level 0 -oo-  14-  17-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (17 ) : 00007FF67551DD00
+Deleted skip list node (Key : 17)
+Print SkipList Inside :  current height (3)
+level 3 -oo--------------------+oo
+level 2 -oo-  14---------------+oo
+level 1 -oo-  14-  18-  19-----+oo
+level 0 -oo-  14-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (14 ) : 00007FF67551DBC8
+Deleted skip list node (Key : 14)
+Current height is less than the new h_max (2) ==> need adjustment !!
+Print SkipList Inside :  current height (2)
+level 2 -oo---------------+oo
+level 1 -oo-  18-  19-----+oo
+level 0 -oo-  18-  19-  20+oo
+
+
+Search planetSkipList and delete the Voca (19 ) : 00007FF67551DDD0
+Deleted skip list node (Key : 19)
+Print SkipList Inside :  current height (2)
+level 2 -oo----------+oo
+level 1 -oo-  18-----+oo
+level 0 -oo-  18-  20+oo
+
+
+Search planetSkipList and delete the Voca (18 ) : 00007FF67551DD68
+Deleted skip list node (Key : 18)
+Current height is less than the new h_max (1) ==> need adjustment !!
+Print SkipList Inside :  current height (1)
+level 1 -oo-----+oo
+level 0 -oo-  20+oo
+
+
+Search planetSkipList and delete the Voca (20 ) : 00007FF67551DE38
+Deleted skip list node (Key : 20)
+Current height is less than the new h_max (0) ==> need adjustment !!
+Print SkipList Inside :  current height (0)
+level 0 -oo+oo
+
+
