@@ -6,7 +6,7 @@
 	- Graph자료구조를 MinimumSpannigTree형태로 구성하고 출력해보기
 
   프로그램 작성자 : 신대홍(2022년 12월 9일)
-  최종 Update : Version 1.0.0, 2022년 12월 9일(신대홍)
+  최종 Update : Version 1.2.1, 2022년 12월 15일(신대홍)
 ===========================================================================================================
 					프로그램 수정/보완 이력
 ===========================================================================================================
@@ -15,7 +15,7 @@
 	신대홍		 2022/12/06		v1.0.0		  최초작성
 	신대홍		 2022/12/08		v1.1.0		  한국 지리 그래프 자료 추가
 	신대홍		 2022/12/09		v1.2.0		  DFS, BFS 알고리즘 추가
-
+	신대홍		 2022/12/15		v1.2.1		  BFS 알고리즘 완성
 ===========================================================================================================
 */
 
@@ -159,9 +159,9 @@ void test_DijkstraSearch(Graph* pG)
 		cout << "\n\nFinding Shortest paths (using Dijkstra) from " << pStart->Name() << " to " <<
 			pEnd->Name() << " : " << endl;
 		// 탐색 후, 경로 path 를 반환받음 
-		bfsGraph.DijkstraShortestPath(cout, *pStart, *pEnd, path);
+		bfsGraph.bfsShortestPath(cout, *pStart, *pEnd, path);
 		// 출력
-		cout << "Path found by Dijkstra (shortest) from " << pStart->Name() << " to " << pEnd->Name() << " : ";
+		cout << "Path found by Breadth First Search (shortest) from " << pStart->Name() << " to " << pEnd->Name() << " : ";
 		for (VrtxItor vItor = path.begin(); vItor != path.end(); ++vItor)
 			cout << *vItor << " → ";
 		cout << "end" << endl;

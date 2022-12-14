@@ -99,15 +99,15 @@ void BreadthFirstSearch::_bfsTraversal(ostream& ostr, Vertex& s, Vertex& target,
 				while (eItor != edges.end())
 				{
 					pVrtx = eItor->pvrtx_2();
-					if (pVrtx->VrtxStat() != VISITED)
+					if (!isVisited(*pVrtx))
 					{
 						nodeLevel[pVrtx->Id()] = level + 1;		// VItor의 반대노드는 vItor의 Level + 1이다.
-						pVrtx->SetVrtxStat(VISITED);
-						eItor->SetEdgeStat(DISCOVERY);
+						visit(*pVrtx);
+						SetEdgeStat(*eItor, DISCOVERY);
 						pPrev[pVrtx->Id()] = vItor->Id();		// pPrev에 이전노드의 아이디를 넣음
 					}
 					else
-						eItor->SetEdgeStat(CROSS);			// 이미 만난 노드와 연결된 간선은 CROSS EDGE로 표시(가지 않는다)
+						SetEdgeStat(*eItor, CROSS);			// 이미 만난 노드와 연결된 간선은 CROSS EDGE로 표시(가지 않는다)
 					++eItor;
 				}	// end of while 
 				num_visited++;
@@ -117,8 +117,10 @@ void BreadthFirstSearch::_bfsTraversal(ostream& ostr, Vertex& s, Vertex& target,
 		if (num_visited >= num_nodes)		// 탈출 구문
 			break;
 		level++;		// 레벨을 증가하고, 다음 레벨 탐색
+		ostr << endl;
 	} // end of while (num_visited < num_nodes)
 
+	ostr << endl;
 	// 모든 노드를 탐색한 후, path에 push한다.
 	vID = target_vID;
 	while (vID != start_vID)
@@ -131,28 +133,87 @@ void BreadthFirstSearch::_bfsTraversal(ostream& ostr, Vertex& s, Vertex& target,
 
 }
 
+// utilities
 void BreadthFirstSearch::visit(Vertex& v)
 {
+	Vertex* pVtx = NULL;
 	int numNodes = graph.NumVertices();
 	int vID = v.Id();
-	if (isValidvID(vID))
-	{
-		Vertex* pVrtx = graph.pVrtxArr();
-		pVrtx[vID].SetVrtxStat(VISITED);
-	}
+
+	if (getGraph().isValidvID(vID))		// 만약 vID가 유효하다면
+		pVrtxStatus[vID] = VISITED;		// 이 Vertex는 방문한 상태라고 표시
 }
 
 bool BreadthFirstSearch::isVisited(Vertex& v)
 {
+	Vertex* pVtx = NULL;
 	int numNodes = graph.NumVertices();
 	int vID = v.Id();
-	if (isValidvID(vID))
+
+	if (getGraph().isValidvID(vID))				// 만약 vID가 유효하다면
+		return (pVrtxStatus[vID] == VISITED);	// 이 Vertex는 방문한 상태라고 반환
+	return false;
+}
+
+void BreadthFirstSearch::SetEdgeStat(Edge & e, EdgeStatus es)
+{
+	Vertex vrtx_1, vrtx_2;
+	int vID_1, vID_2;
+	int numNodes = graph.NumVertices();
+
+	// 간선으로 이어진 두 노드를 받아와 id를 가져옴
+	vrtx_1 = *e.pvrtx_1();	vrtx_2 = *e.pvrtx_2();
+	vID_1 = vrtx_1.Id();	vID_2 = vrtx_2.Id();
+
+	// 만약 두 노드가 모두 유효하다면 간선의 상태를 es로 변경
+	if (graph.isValidvID(vID_1) && graph.isValidvID(vID_2))
+		ppEdgeStatus[vID_1][vID_2] = es;
+}
+bool BreadthFirstSearch::isVisited(Edge& e)
+{
+	Vertex vrtx_1, vrtx_2;
+	int vID_1, vID_2;
+	int numNodes = graph.NumVertices();
+	EdgeStatus eStat;
+
+	// 간선으로 이어진 두 노드를 받아와 id를 가져옴
+	vrtx_1 = *e.pvrtx_1();	vrtx_2 = *e.pvrtx_2();
+	vID_1 = vrtx_1.Id();	vID_2 = vrtx_2.Id();
+
+	// 만약 두 노드가 모두 유효하다면 간선이 방문했는지(발견했는지/ 뒤로가는지)여부를 확인
+	if (graph.isValidvID(vID_1) && graph.isValidvID(vID_2))
 	{
-		Vertex* pVrtx = graph.pVrtxArr();
-		return (pVrtx[vID] == VISITED);
+		eStat = ppEdgeStatus[vID_1][vID_2];
+		if ((eStat == EDGE_VISITED) || (eStat == DISCOVERY) || (eStat == BACK))
+			return true;
+		else
+			return false;
 	}
 	return false;
 }
+//void BreadthFirstSearch::visit(Vertex& v)
+//{
+//	int numNodes = graph.NumVertices();
+//	int vID = v.Id();
+//	if (isValidvID(vID))
+//	{
+//		Vertex* pVrtx = graph.pVrtxArr();
+//		pVrtx[vID].SetVrtxStat(VISITED);
+//	}
+//}
+
+//bool BreadthFirstSearch::isVisited(Vertex& v)
+//{
+//	int numNodes = graph.NumVertices();
+//	int vID = v.Id();
+//	if (isValidvID(vID))
+//	{
+//		Vertex* pVrtx = graph.pVrtxArr();
+//		return (pVrtx[vID] == VISITED);
+//	}
+//	return false;
+//}
+
 
 void BreadthFirstSearch::DijkstraShortestPath(ostream& ostr, Vertex& start, Vertex& target, VrtxList& path)
 {
